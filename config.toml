@@ -1,0 +1,48 @@
+[gamepad]
+# set true if WASD is moving the camera / right stick in-game
+swap_sticks = false
+
+[mouse]
+sensitivity_x = 9000.0  # stick units per pixel this tick
+sensitivity_y = 9000.0
+smoothing = 0.05        # 0 = raw; bump toward 0.2 if aim feels jittery
+release = 0.85          # recenter speed when mouse stops (1.0 = instant)
+deadzone = 0
+invert_y = false
+max_delta = 120.0       # clamp per-tick pixels so flicks don't go insane
+
+[quit]
+keys = ["LEFTCTRL", "LEFTSHIFT", "Q"]
+
+[toggle]
+keys = ["LEFTCTRL", "LEFTSHIFT", "T"]
+
+[buttons]
+# KEY_*/BTN_* name -> pad button
+# A B X Y LB RB BACK START LS RS LT RT DPAD_*
+SPACE = "A"
+C = "B"
+R = "Y"
+G = "X"
+LEFTSHIFT = "LS"   # L3
+V = "RB"
+F = "RS"          # R3
+ESC = "START"
+TAB = "BACK"
+BTN_LEFT = "RT"
+BTN_RIGHT = "LT"
+UP = "DPAD_UP"
+DOWN = "DPAD_DOWN"
+LEFT = "DPAD_LEFT"
+RIGHT = "DPAD_RIGHT"
+
+[axes]
+# WASD is forced to left stick in code too; don't put these on RX/RY
+W = "LY-"
+S = "LY+"
+A = "LX-"
+D = "LX+"
+
+[scroll]
+up = "RB"
+down = "LB"
