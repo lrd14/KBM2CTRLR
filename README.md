@@ -84,3 +84,8 @@ cat /proc/bus/input/devices | grep -A5 "Xbox360"
 jstest /dev/input/js0
 # / evtest on the event node for "Microsoft X-Box 360 pad"
 ```
+
+## Some fixes I found whilst developing this
+
+1. If you have any other controllers plugged in I've found that it causes issues with the left stick for some reason (this might be just a me issue with maybe stick drift?).
+
