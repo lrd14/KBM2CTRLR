@@ -1,3 +1,5 @@
+# THIS WAS MADE TO WORK MAINLY ON CACHY OS ARCH WITH KDE PLASMA AND HASN'T BEEN TESTED ON OTHER OS'S
+
 # Keyboard/Mouse → Virtual Controller
 
 Grabs **all** physical keyboards and mice globally while running, and exposes them as a virtual Xbox 360 controller via `uinput`. The exclusive grab is kept for the whole session so games cannot steal devices and trap you — toggle/quit always work.
@@ -6,7 +8,7 @@ Grabs **all** physical keyboards and mice globally while running, and exposes th
 
 **Quit:** `Ctrl+Shift+Q` — release grab and exit.
 
-## Permissions (CachyOS / Arch)
+## Permissions
 
 1. Load the `uinput` module and make it persistent:
 
